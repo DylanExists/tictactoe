@@ -18,7 +18,6 @@ while z == 0:
     board()
     g = input(">>>")
     replacea(g, g, h)
-        bad = 42 / 0
     if a[0, 1, 2] or a[3, 4, 5] or a[6, 7, 8] == "X" or "O":
         z = 1
     elif a[0, 3, 6] or a[1, 4, 7] or a[2, 5, 8] == "X" or "O":
