@@ -22,13 +22,11 @@ while z == 0:
     while i < 5:
         if a[i] and a[i + 1] and a[i + 2] == "X" or "O":
             z = 1
-            break
         i += 3
     i = 0
     while i < 2:
         if a[i] and a[i + 3] and a[i + 6] == "X" or "O":
             z = 1
-            break
         i += 1
     if a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
         z = 1
@@ -40,16 +38,16 @@ while z == 0:
     while i < 5:
         if a[i] and a[i + 1] and a[i + 2] == "X" or "O":
             z = 1
-            break
         i += 3
     i = 0
     while i < 2:
         if a[i] and a[i + 3] and a[i + 6] == "X" or "O":
             z = 1
-            break
         i += 1
     if a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
         z = 1
+    else:
+        continue
 print("WIN!")
 print("Ending board:")
 board()
