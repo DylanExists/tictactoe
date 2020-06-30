@@ -3,7 +3,7 @@ a = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 
 def replacea(d, e, f):
-    a.remove(int(d))
+    a.remove(d)
     a.insert(int(e), f)
 
 
