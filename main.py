@@ -18,36 +18,22 @@ while z == 0:
     board()
     g = input(">>>")
     replace(g, g, h)
-    i = 0
-    while i < 5:
-        if a[i] and a[i + 1] and a[i + 2] == "X" or "O":
-            z = 1
-        i += 3
-    i = 0
-    while i < 2:
-        if a[i] and a[i + 3] and a[i + 6] == "X" or "O":
-            z = 1
-        i += 1
-    if a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
+    if a[0] and a[3] and a[6] or a[1] and a[4] and a[7] or a[2] and a[5] and a[8] == "X" or "O":
+        z = 1
+    elif a[0] and a[1] and a[2] or a[3] and a[4] and a[5] or a[6] and a[7] and a[8] == "X" or "O":
+        z = 1
+    elif a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
         z = 1
     h = "O"
     board()
     g = input(">>>")
     replace(g, g, h)
-    i = 0
-    while i < 5:
-        if a[i] and a[i + 1] and a[i + 2] == "X" or "O":
-            z = 1
-        i += 3
-    i = 0
-    while i < 2:
-        if a[i] and a[i + 3] and a[i + 6] == "X" or "O":
-            z = 1
-        i += 1
-    if a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
+    if a[0] and a[3] and a[6] or a[1] and a[4] and a[7] or a[2] and a[5] and a[8] == "X" or "O":
         z = 1
-    else:
-        continue
+    elif a[0] and a[1] and a[2] or a[3] and a[4] and a[5] or a[6] and a[7] and a[8] == "X" or "O":
+        z = 1
+    elif a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
+        z = 1
 print("WIN!")
 print("Ending board:")
 board()
