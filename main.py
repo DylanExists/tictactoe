@@ -26,11 +26,11 @@ while z == 0:
     else:
         print("you did a bad")
         bad = 42 / 0
-    if a[0] and b[0] and c[0] or a[1] and b[1] and c[1] or a[2] and b[2] and c[2] == "X" or "O":
+    if a[0, 1, 2] or a[3, 4, 5] or a[6, 7, 8] == "X" or "O":
         z = 1
-    elif a[0] and a[1] and a[2] or b[0] and b[1] and b[2] or c[0] and c[1] and c[2] == "X" or "O":
+    elif a[0, 3, 6] or a[1, 4, 7] or a[2, 5, 8] == "X" or "O":
         z = 1
-    elif a[0] and b[1] and c[2] or a[2] and b[1] and c[0] == "X" or "O":
+    elif a[0, 5, 8] or a[3, 5, 6] == "X" or "O":
         z = 1
     h = "O"
     board()
@@ -44,11 +44,11 @@ while z == 0:
     else:
         print("you did a bad")
         bad = 42 / 0
-    if a[0] and b[0] and c[0] or a[1] and b[1] and c[1] or a[2] and b[2] and c[2] == "X" or "O":
+    if a[0, 1, 2] or a[3, 4, 5] or a[6, 7, 8] == "X" or "O":
         z = 1
-    elif a[0] and a[1] and a[2] or b[0] and b[1] and b[2] or c[0] and c[1] and c[2] == "X" or "O":
+    elif a[0, 3, 6] or a[1, 4, 7] or a[2, 5, 8] == "X" or "O":
         z = 1
-    elif a[0] and b[1] and c[2] or a[2] and b[1] and c[0] == "X" or "O":
+    elif a[0, 5, 8] or a[3, 5, 6] == "X" or "O":
         z = 1
 print("Someone won! You know who.")
 print("Ending board:")
