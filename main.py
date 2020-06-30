@@ -18,21 +18,37 @@ while z == 0:
     board()
     g = input(">>>")
     replacea(g, g, h)
-    if a[0, 1, 2] or a[3, 4, 5] or a[6, 7, 8] == "X" or "O":
-        z = 1
-    elif a[0, 3, 6] or a[1, 4, 7] or a[2, 5, 8] == "X" or "O":
-        z = 1
-    elif a[0, 5, 8] or a[3, 5, 6] == "X" or "O":
+    i = 0
+    while i < 5:
+        if a[i] and a[i + 1] and a[i + 2] == "X" or "O":
+            z = 1
+            break
+        i += 3
+    i = 0
+    while i < 2:
+        if a[i] and a[i + 3] and a[i + 6] == "X" or "O":
+            z = 1
+            break
+        i += 1
+    if a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
         z = 1
     h = "O"
     board()
     g = input(">>>")
     replacea(g, g, h)
-    if a[0, 1, 2] or a[3, 4, 5] or a[6, 7, 8] == "X" or "O":
-        z = 1
-    elif a[0, 3, 6] or a[1, 4, 7] or a[2, 5, 8] == "X" or "O":
-        z = 1
-    elif a[0, 5, 8] or a[3, 5, 6] == "X" or "O":
+    i = 0
+    while i < 5:
+        if a[i] and a[i + 1] and a[i + 2] == "X" or "O":
+            z = 1
+            break
+        i += 3
+    i = 0
+    while i < 2:
+        if a[i] and a[i + 3] and a[i + 6] == "X" or "O":
+            z = 1
+            break
+        i += 1
+    if a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
         z = 1
 print("Someone won! You know who.")
 print("Ending board:")
