@@ -1,7 +1,5 @@
 z = 0
-a = ["1", "2", "3"]
-b = ["4", "5", "6"]
-c = ["7", "8", "9"]
+a = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
 
 def replacea(d, e, f):
@@ -9,20 +7,10 @@ def replacea(d, e, f):
     a.insert(e, f)
 
 
-def replaceb(d, e, f):
-    b.remove(d)
-    b.insert(e, f)
-
-
-def replacec(d, e, f):
-    c.remove(d)
-    c.insert(e, f)
-
-
 def board():
-    print(a)
-    print(b)
-    print(c)
+    print(a[0], a[1], a[2])
+    print(a[3], a[4], a[5])
+    print(a[6], a[7], a[8])
 
 
 while z == 0:
