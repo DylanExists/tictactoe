@@ -13,41 +13,47 @@ def board():
     print(a[6], a[7], a[8])
 
 
-while z == 0:
+while 1 < 2:
     h = "X"
     board()
     g = input(">>>")
     replace(g, g, h)
-    i = 0
-    while i < 5:
-        if a[i] and a[i + 1] and a[i + 2] == "X" or "O":
-            z = 1
-        i += 3
-    i = 0
-    while i < 2:
-        if a[i] and a[i + 3] and a[i + 6] == "X" or "O":
-            z = 1
-        i += 1
-    if a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
-        z = 1
+    if a[0] == h and a[1] == h and a[2] == h:
+        break
+    elif a[3] == h and a[4] == h and a[5] == h:
+        break
+    elif a[6] == h and a[7] == h and a[8] == h:
+        break
+    elif a[0] == h and a[3] == h and a[6] == h:
+        break
+    elif a[1] == h and a[4] == h and a[7] == h:
+        break
+    elif a[2] == h and a[5] == h and a[8] == h:
+        break
+    elif a[0] == h and a[4] == h and a[8] == h:
+        break
+    elif a[2] == h and a[4] == h and a[6] == h:
+        break
     h = "O"
     board()
     g = input(">>>")
     replace(g, g, h)
-    i = 0
-    while i < 5:
-        if a[i] and a[i + 1] and a[i + 2] == "X" or "O":
-            z = 1
-        i += 3
-    i = 0
-    while i < 2:
-        if a[i] and a[i + 3] and a[i + 6] == "X" or "O":
-            z = 1
-        i += 1
-    if a[0] and a[4] and a[7] or a[2] and a[4] and a[6] == "X" or "O":
-        z = 1
-    else:
-        continue
+    if a[0] == h and a[1] == h and a[2] == h:
+        break
+    elif a[3] == h and a[4] == h and a[5] == h:
+        break
+    elif a[6] == h and a[7] == h and a[8] == h:
+        break
+    elif a[0] == h and a[3] == h and a[6] == h:
+        break
+    elif a[1] == h and a[4] == h and a[7] == h:
+        break
+    elif a[2] == h and a[5] == h and a[8] == h:
+        break
+    elif a[0] == h and a[4] == h and a[8] == h:
+        break
+    elif a[2] == h and a[4] == h and a[6] == h:
+        break
 print("WIN!")
 print("Ending board:")
 board()
